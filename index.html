@@ -156,7 +156,7 @@
         <label for="birthday">Date of Birth: 
           <input 
             type="date" 
-            id="date"
+            id="birthday"
             value="2000-01-01"
             min="2000-01-01"
             max="2100-01-01"
@@ -165,16 +165,19 @@
       </div>
 
       <div>
-        <label for="survey"><strong>Do you like my design?</strong>
+        <fieldset>
+          <legend><strong>Do you like my design?</strong></legend>
+          
           <div>
-            <input type="checkbox" id="yes" name="yes">
+            <input type="checkbox" id="survey" name="yes">
             <label for="yes">Yes</label>
           </div>
+          
           <div>
-            <input type="checkbox" id="no" name="no">
+            <input type="checkbox" id="survey" name="no">
             <label for="no">No</label>
           </div>
-        </label>
+        </fieldset>
       </div>
 
       <div>
