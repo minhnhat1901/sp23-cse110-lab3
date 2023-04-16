@@ -1,12 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="description" content="Note summary for people missing the meeting today.">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Meeting Minutes</title>
+    <link rel="icon" type="image/png" href="icons8-duck-16.png">
 </head>
+
 <body>
+  <header>
+    <h1>Meeting Report</h1>
     
+    <div>MEETING SECTIONS</div>
+
+    <nav>
+      <ul>
+        <li><a href="#attendance list">Attendance List</a></li>
+        <li><a href="#agenda">Agenda</a></li>
+        <li><a href="#unfinished business">Unfinished Business</a></li>
+        <li><a href="#new business">New Business</a></li>
+        <li><a href="#comments">Questions/Comments</a></li>
+        <li><a href="#audio/video record">Audio/Video record</a></li>
+        <li><a href="#summary">Summary</a></li>
+      </ul>
+    </nav>
+
+    <label for="date">Date: 
+      <input 
+        type="date" 
+        id="date"
+        value="2000-01-01"
+        min="2000-01-01"
+        max="2100-01-01"
+        >
+    </label>
+    
+    <br><br>
+    
+    <label for="time">Time:
+      <input 
+        type="time"
+        id="time-input" 
+        name="time-input"
+        step="3600" 
+        min="00:00" 
+        max="23:59" 
+        pattern="[0-2][0-9]:[0-5][0-9]">
+    </label>
+    
+    <br><br>
+    
+    <label for="location">Location: 
+      <input 
+        type="text" 
+        placeholder="Enter the room number"
+        id="location" 
+        size="17">
+    </label>
+    <br><br>
+  </header>
+
+  <main>
+    <img 
+      src="https://images.unsplash.com/photo-1573167507387-6b4b98cb7c13?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80" 
+      alt="meeting image"
+      width="500">
+    <section>
+      <h2 id="attendance list">Attendance List</h2>
+      
+      <ol>
+        <li>Amy<input type="checkbox"></li>
+        <li>Bob<input type="checkbox"></li>
+        <li>Cartier<input type="checkbox"></li>
+        <li>Daniel<input type="checkbox"></li>
+        <li>Evelyn<input type="checkbox"></li>
+        <li>Gilman<input type="checkbox"></li>
+        <li>Henry<input type="checkbox"></li>
+        <li>Irene<input type="checkbox"></li>
+        <li>Joshua<input type="checkbox"></li>
+        <li>Kevin<input type="checkbox"></li>
+      </ol>
+    </section>
+
+    <section>
+      <h2 id="agenda">Agenda</h2>
+        
+      <section>
+        <h3>Review</h3>
+        <ul>
+          <li><span>Go over</span> what we discuss from last meeting.</li>
+          <li><span>Update</span> the status of the process.</li>
+        </ul>
+      </section>
+      
+      <section>
+        <h3>Discussion</h3>
+        <p>
+          <strong>Talk more about what we have left and fix the issue.</strong>  
+          There are some areas that we should improve in the project.
+          <strong>We will also talk about how each group member's performance.</strong>
+          We want everyone should be working fairly and equally. 
+        </p>
+      </section>
+      
+      <section>
+        <h3>Next Step</h3>
+        <p>
+          We do <em>not</em> want anyone work for other so we will divide the work
+          into separate part and make sure <i>everyone can work on that based on their strength</i>.
+          Also, comes up with the plan for the future.
+        </p>
+      </section>      
+    </section>
+
+    <section>
+      <h2 id="unfinished business">Unfinished Business</h2>
+      <p>
+        We are still discussing about how the project should look like, and based on the
+        information that we have, how to draw a diagram to demonstrate the number. Another 
+        think that we forgot to mention the previous meeting is that we should create a plan
+        so that we will finish this project by the deadline.
+      </p>
+    </section>
+
+    <section>
+      <h2 id="new business">New business</h2>
+        <p>We just go over what we have left from the last meeting.</p>
+        
+        <h3>Image capture from the meeting</h3>      
+        
+        <img 
+        src="https://www.math-only-math.com/images/representation-bar-graph.png" 
+        alt="Diagram">
+    </section>
+
+    <section>
+      <h2 id="comments">Questions/Comments</h2>
+        <textarea id="comments" name="comments"
+          rows="5" cols="33">Enter here...
+        </textarea>
+    </section>
+
+    <section>
+      <h2 id="audio/video record">Audio/Video record</h2>
+      
+      <video controls width="500">
+        <source src="The Expert_ Progress Meeting.mp4"
+                type="video/mp4"
+                width="500">
+      </video>
+
+      <figure>
+        <figcaption>Audio for the video record:</figcaption>
+          <audio 
+            controls 
+            src="The Expert_ Progress Meeting.mp3">
+          </audio>
+      </figure>
+    </section>
+
+    <section>
+      <h2 id="summary">Summary</h2>
+      <details>
+        <summary>Details</summary>
+        <li>Cover what we have left from the previous meeting</li>
+        <li>Point out how contribution each person in group does</li>
+        <li>Divided work to each person</li>
+        <li>Make a diagram to analyze the data</li>
+        <li>Plan the time to make sure we don't pass the deadline</li>
+      </details>
+    </section>
+  </main>
+
+  <hr>
+  
+  <footer></footer>
 </body>
 </html>
