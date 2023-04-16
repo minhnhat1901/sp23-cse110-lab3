@@ -26,40 +26,6 @@
         <li><a href="#summary">Summary</a></li>
       </ul>
     </nav>
-
-    <label for="date">Date: 
-      <input 
-        type="date" 
-        id="date"
-        value="2000-01-01"
-        min="2000-01-01"
-        max="2100-01-01"
-        >
-    </label>
-    
-    <br><br>
-    
-    <label for="time">Time:
-      <input 
-        type="time"
-        id="time-input" 
-        name="time-input"
-        step="3600" 
-        min="00:00" 
-        max="23:59" 
-        pattern="[0-2][0-9]:[0-5][0-9]">
-    </label>
-    
-    <br><br>
-    
-    <label for="location">Location: 
-      <input 
-        type="text" 
-        placeholder="Enter the room number"
-        id="location" 
-        size="17">
-    </label>
-    <br><br>
   </header>
 
   <main>
@@ -176,6 +142,125 @@
 
   <hr>
   
-  <footer></footer>
+  <footer>
+    <h4>Survey</h4>
+
+    <form onsubmit="alert('Submitted!')">
+      <div>
+        <input type="text" placeholder="Enter your name"> 
+        <button>Submit</button>
+      </div>
+
+      <div>
+        <label for="birthday">Date of Birth: 
+          <input 
+            type="date" 
+            id="date"
+            value="2000-01-01"
+            min="2000-01-01"
+            max="2100-01-01"
+            >
+        </label>
+      </div>
+
+      <div>
+        <label for="survey"><strong>Do you like my design?</strong>
+          <div>
+            <input type="checkbox" id="yes" name="yes">
+            <label for="yes">Yes</label>
+          </div>
+          <div>
+            <input type="checkbox" id="no" name="no">
+            <label for="no">No</label>
+          </div>
+        </label>
+      </div>
+
+      <div>
+        <fieldset>
+          <legend>Select your favorite sport:</legend>
+          <div>
+            <input type="radio" id="badminton" name="sport" value="B">
+            <label for="badminton">Badminton</label>
+          </div>
+          
+          <div>
+            <input type="radio" id="soccer" name="sport" value="S">
+            <label for="soccer">Soccer</label>
+          </div>
+
+          <div>
+            <input type="radio" id="ping pong" name="sport" value="PP">
+            <label for="ping pong">Ping Pong</label>
+          </div>
+
+          <div>
+            <input type="radio" id="other" name="sport" value="O">
+            <label for="other">Other</label>
+          </div>
+
+          <div>
+            <textarea 
+              name="specify" 
+              id="other" 
+              cols="31" 
+              rows="2" 
+              placeholder="If other, please specify here..."></textarea>
+          </div>
+
+          <div>
+            <button>Submit</button>
+          </div>
+        </fieldset>
+      </div>
+
+      <div>
+        <label for="hobbies">Choose your hobby:</label>
+        <input list="list_of_hobbies" id="hobbies" name="hobbies">
+            
+        <datalist id="list_of_hobbies">
+          <option value="Cooking & Baking">
+          <option value="Reading">
+          <option value="Pets">
+          <option value="Video gaming">
+          <option value="Outdoor activities">
+          <option value="Traveling">
+          <option value="DIY and arts & crafts">
+          <option value="Gardening and plants">
+          <option value="Socializing">
+          <option value="Board games & card games">
+          <option value="Photography">
+          <option value="Tech & computers">
+          <option value="Doing sports and fitness">
+          <option value="Meditation & wellness">
+          <option value="Writing">
+          <option value="Cars & vehicles">
+          <option value="Making music">
+          <option value="Other">
+          <option value="Don't know">
+        </datalist>
+      </div>
+
+      <div>
+        <label for="car-select">Choose a type of car:</label>
+
+        <select name="car" id="car-select">
+          <option value="">--Please choose an option--</option>
+          <option value="suv">SUV</option>
+          <option value="hatchback">Hatchback</option>
+          <option value="crossover">Crossover</option>
+          <option value="convertible">Convertible</option>
+          <option value="sedan">Sedan</option>
+          <option value="sport car">Sports Car</option>
+          <option value="coupe">Coupe</option>
+          <option value="minivan">Minivan</option>
+          <option value="station wagon">Station Wagon</option>
+          <option value="pickup truck">Pickup Truck</option>
+        </select>
+      </div>
+    </form>
+
+    <span><strong><i>Thank you for your time!</i></strong> 🥰</span>
+  </footer>
 </body>
 </html>
