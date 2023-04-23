@@ -7,29 +7,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meeting Minutes</title>
     <link rel="icon" type="image/png" href="icons8-duck-16.png">
+    <link rel="stylesheet" href="index_styling.css">
 </head>
 
 <body>
   <header>
     <h1>Meeting Report</h1>
     
-    <div>MEETING SECTIONS</div>
-
-    <nav>
-      <ul>
-        <li><a href="#attendance_list">Attendance List</a></li>
-        <li><a href="#agenda">Agenda</a></li>
-        <li><a href="#unfinished_business">Unfinished Business</a></li>
-        <li><a href="#new_business">New Business</a></li>
-        <li><a href="#comments">Questions/Comments</a></li>
-        <li><a href="#audio/video_record">Audio/Video record</a></li>
-        <li><a href="#summary">Summary</a></li>
-      </ul>
-    </nav>
+    <div class="topic"><strong>MEETING SECTIONS</strong>
+      <nav>
+        <ul>
+          <li><a href="#attendance_list">Attendance List</a></li>
+          <li><a href="#agenda">Agenda</a></li>
+          <li><a href="#unfinished_business">Unfinished Business</a></li>
+          <li><a href="#new_business">New Business</a></li>
+          <li><a href="#comments">Questions/Comments</a></li>
+          <li><a href="#audio/video_record">Audio/Video record</a></li>
+          <li><a href="#summary">Summary</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <img 
+    <img class="image"
       src="https://images.unsplash.com/photo-1573167507387-6b4b98cb7c13?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80" 
       alt="meeting image"
       width="500">
@@ -52,38 +53,39 @@
 
     <section>
       <h2 id="agenda">Agenda</h2>
+      <div class="agenda_class">
+        <section>
+          <h3>Review</h3>
+          <ul>
+            <li><span>Go over</span> what we discuss from last meeting.</li>
+            <li><span>Update</span> the status of the process.</li>
+          </ul>
+        </section>
         
-      <section>
-        <h3>Review</h3>
-        <ul>
-          <li><span>Go over</span> what we discuss from last meeting.</li>
-          <li><span>Update</span> the status of the process.</li>
-        </ul>
-      </section>
-      
-      <section>
-        <h3>Discussion</h3>
-        <p>
-          <strong>Talk more about what we have left and fix the issue.</strong>  
-          There are some areas that we should improve in the project.
-          <strong>We will also talk about how each group member's performance.</strong>
-          We want everyone should be working fairly and equally. 
-        </p>
-      </section>
-      
-      <section>
-        <h3>Next Step</h3>
-        <p>
-          We do <em>not</em> want anyone work for other so we will divide the work
-          into separate part and make sure <i>everyone can work on that based on their strength</i>.
-          Also, comes up with the plan for the future.
-        </p>
-      </section>      
+        <section>
+          <h3>Discussion</h3>
+          <p class="paragraph_detail">
+            <strong>Talk more about what we have left and fix the issue.</strong>  
+            There are some areas that we should improve in the project.
+            <strong>We will also talk about how each group member's performance.</strong>
+            We want everyone should be working fairly and equally. 
+          </p>
+        </section>
+        
+        <section>
+          <h3>Next Step</h3>
+          <p class="paragraph_detail">
+            We do <em>not</em> want anyone work for other so we will divide the work
+            into separate part and make sure <i>everyone can work on that based on their strength</i>.
+            Also, comes up with the plan for the future.
+          </p>
+        </section>
+      </div>
     </section>
 
     <section>
       <h2 id="unfinished_business">Unfinished Business</h2>
-      <p>
+      <p class="paragraph_detail">
         We are still discussing about how the project should look like, and based on the
         information that we have, how to draw a diagram to demonstrate the number. Another 
         think that we forgot to mention the previous meeting is that we should create a plan
@@ -93,26 +95,27 @@
 
     <section>
       <h2 id="new_business">New business</h2>
-        <p>We just go over what we have left from the last meeting.</p>
+        <p class="paragraph_detail">
+          We just go over what we have left from the last meeting.
+        </p>
         
         <h3>Image capture from the meeting</h3>      
         
-        <img 
+        <img class="image"
         src="https://www.math-only-math.com/images/representation-bar-graph.png" 
         alt="Diagram">
     </section>
 
-    <section>
+    <section class="comment">
       <h2 id="comments">Questions/Comments</h2>
         <textarea id="question/comment" name="question/comment"
-          rows="5" cols="33">Enter here...
-        </textarea>
+          rows="5" cols="40">Enter here...</textarea>
     </section>
 
     <section>
       <h2 id="audio/video_record">Audio/Video record</h2>
       
-      <video controls width="500">
+      <video class="" controls width="500">
         <source src="TheExpert_ProgressMeeting.mp4"
                 type="video/mp4">
       </video>
@@ -146,10 +149,10 @@
   <footer>
     <h4>Survey</h4>
 
-    <form onsubmit="alert('Submitted!')">
-      <div>
+    <form class="form_container" onsubmit="alert('Submitted!')">
+      <div >
         <input type="text" placeholder="Enter your name"> 
-        <button>Submit</button>
+        <button class="submit_button">Submit</button>
       </div>
 
       <div>
@@ -213,7 +216,7 @@
           </div>
 
           <div>
-            <button>Submit</button>
+            <button class="submit_button">Submit</button>
           </div>
         </fieldset>
       </div>
@@ -264,7 +267,35 @@
       </div>
     </form>
 
-    <span><strong><i>Thank you for your time!</i></strong> 🥰</span>
+    <span id="thank_you"><strong><i>Thank you for your time!</i></strong> 🥰</span>
+    
+    <br><hr><br>
+
+    <section class="image_ending">
+      <div class="item1">
+        <img class="galerieImg"
+          src="https://images.unsplash.com/photo-1620694563886-c3a80ec55f41?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2FuYXJ5fGVufDB8fDB8fA%3D%3D&w=1000&q=80" 
+          alt="Beautiful_picture">
+      </div>
+
+      <div class="item2">
+        <img class="galerieImg"
+          src="https://media.istockphoto.com/id/1268487061/photo/mount-hood-oregon.jpg?s=612x612&w=0&k=20&c=MQLohuhO9e7gl-A-SnwJNpHQ1Q4qiGxhGnBQU2co8Zs=" 
+          alt="Beautiful_picture">
+      </div>
+     
+      <div>
+        <img class="galerieImg"
+          src="https://images.unsplash.com/photo-1526547541286-73a7aaa08f2a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8&w=1000&q=80" 
+          alt="Beautiful_picture">
+      </div>
+      
+      <div>
+        <img class="galerieImg"
+          src="https://images.unsplash.com/photo-1421930866250-aa0594cea05c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8eWVsbG93JTIwbGFuZHNjYXBlfGVufDB8fDB8fA%3D%3D&w=1000&q=80" 
+          alt="Beautiful_picture">
+      </div>
+    </section>
   </footer>
 </body>
 </html>
