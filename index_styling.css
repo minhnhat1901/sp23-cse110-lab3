@@ -29,7 +29,7 @@ h1 {
     border-bottom-left-radius: 0%;
 
     padding: 1em 0 1em 0;
-    margin-left: 20px;
+    margin: 0 0 0 20px;
 }
 
 /* Create style for header 2 */
@@ -95,7 +95,7 @@ a:hover {
     width: 5em;
     height: 3ex;
     background-image: linear-gradient(135deg, #f34079 40%, #fc894d);
-    border: none;
+    border: 0 0 0 0;
     border-radius: 7px;
     font-weight: bold;
     color: white;
@@ -117,7 +117,8 @@ video {
 #thank_you {
     margin: auto;
     position: absolute;
-    left: 50%;
+    left: 45%;
+    font-size: x-large;
 }
 
 /* Flexbox layout for the form container */
