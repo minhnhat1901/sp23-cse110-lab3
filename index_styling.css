@@ -1,17 +1,19 @@
-/* Design a background color*/
+/* Design a background color */
 @import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Vina+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
+/* Add the background color */
 body {
     background-color: rgba(236, 237, 132, 0.562);
 }
-  
+
+/* Create style for header 1 */
 h1 {
     font-family: 'Lilita One', cursive;
 
-    color: red;
+    color: red;                                 /* color name */
     text-align: center;
-    background-color: hsl(180,100%,50%,60%);
+    background-color: hsl(180,100%,50%,60%);    /* hsl(h, s, l, a) */
     
     padding-top: 25px;
     padding-right: 25px;
@@ -19,7 +21,7 @@ h1 {
     padding-left: 25px;
 
     border-style: groove;
-    border-color: #3376FF;
+    border-color: #3376FF;                      /* colow by hex code */
     border-width: 1vmin 2vmin 1vmin 2vmin;
     border-top-left-radius: 30px;
     border-bottom-right-radius: 30px;
@@ -30,12 +32,14 @@ h1 {
     margin-left: 20px;
 }
 
+/* Create style for header 2 */
 h2 {
     font-family: 'Pacifico', cursive;
 }
 
+/* Create style for the class topic */
 .topic {
-    background-color: rgb(255, 221, 226);
+    background-color: rgb(255, 221, 226);          /* rgb(r, g, b) */
     margin-top: 1cm;
     margin-right: 10px;
     margin-bottom: 1pt;
@@ -52,6 +56,7 @@ h2 {
     border-radius: 20px;
 }
 
+/* Create style for class agenda */
 .agenda_class {
     position: relative;
     left: 10px;
@@ -63,25 +68,28 @@ h2 {
     border-width: 0.5svw;
     border-radius: 20px;
 
-    padding: 1px 1px 1px 1px;
+    padding: 1px 1px 1px 10px;
 }
 
+/* Align image to the middle */
 .image {
     display: block;
     margin: auto;
-
 }
 
+/* Create style for a tag */
 a {
     text-decoration: underline dotted rgb(20, 85, 28) 2px;
 }
 
+/* Apply pseudo-class for the a tag */
 a:hover {
     background-color: powderblue;
     transition: background-color 0.5s;
     cursor: -moz-zoom-in;
 }
 
+/* Design the submit button */
 .submit_button {
     width: 5em;
     height: 3ex;
@@ -93,15 +101,18 @@ a:hover {
     cursor: grab;
 }
 
+/* Apply the active pseudo-class for the button */
 .submit_button:active {
     box-shadow: 2px 2px 5px #fc894d;
 }
 
+/* Create style for video */
 video {
     display: inline;
     box-sizing: content-box;
 }
 
+/* CSS selectors for ID */
 #thank_you {
     margin: auto;
     position: absolute;
@@ -124,13 +135,14 @@ fieldset {
     align-items: flex-start;
 }
 
+/* Align the main part onto the left side */
 main {
     display: flex;
     flex-direction: column;
     align-items: left;
 }
 
-
+/* This part to below is the image part that I organize the grid of images */
 .image_ending {
     width: 60%;
     height: auto;
