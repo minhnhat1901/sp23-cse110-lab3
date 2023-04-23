@@ -1,3 +1,3 @@
-# Lab 2 - Starter
+# Lab 3 - CSS and Agile intro
 
-[My published site](https://minhnhat1901.github.io/Lab2_Starter/)
+[My published site](https://minhnhat1901.github.io/sp23-cse110-lab3)
