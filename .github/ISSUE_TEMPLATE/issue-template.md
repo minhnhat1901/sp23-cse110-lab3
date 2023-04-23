@@ -1,7 +1,7 @@
 ---
 name: Issue Template
 about: Report for each project
-title: ''
+title: 'Lab report'
 labels: documentation
 assignees: minhnhat1901
 
